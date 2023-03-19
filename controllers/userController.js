@@ -35,9 +35,11 @@ module.exports = {
     },
     deleteUser(req, res) {
         let username
+        let isUser = true
         User.findOneAndRemove({ _id: req.params.userId })
             .then((user) => {
                 if (!user) {
+                    isUser = false
                     return res.status(404).json({ message: 'No such user' })
                 } else {
                     username = user.username
@@ -45,11 +47,37 @@ module.exports = {
                 }
             })
             .then(() => {
-                console.log(`User ${username} deleted`)
+                if (isUser) {
+                    let message = `User '${username}' and their thoughts deleted!`
+                    console.log(message)
+                    res.json({
+                        message: message,
+                    })
+                }
+                // Remove this res.json() call
             })
             .catch((err) => {
                 console.log(err)
-                res.status(500).json(err)
+                return res.status(500).json(err)
             })
+    },
+    updateUser(req, res) {
+        User.findByIdAndUpdate(
+            {
+                _id: req.params.userId,
+            },
+            { $set: req.body },
+            { runValidators: true, new: true }
+        )
+            .then((user) => {
+                if (!user) {
+                    return res
+                        .status(404)
+                        .json({ message: 'No user with this id!' })
+                } else {
+                    return res.json(user)
+                }
+            })
+            .catch((err) => res.status(500).json(err))
     },
 }
