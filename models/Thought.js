@@ -1,25 +1,32 @@
 const mongoose = require('mongoose')
 const User = require('./User')
-const reactionSchema = new mongoose.Schema({
-    reactionId: {
-        type: mongoose.Schema.Types.ObjectId,
-        default: () => new mongoose.Types.ObjectId(),
+const reactionSchema = new mongoose.Schema(
+    {
+        reactionId: {
+            type: mongoose.Schema.Types.ObjectId,
+            default: () => new mongoose.Types.ObjectId(),
+        },
+        reactionBody: {
+            type: String,
+            required: true,
+            maxLength: 280,
+        },
+        username: {
+            type: String,
+            required: true,
+        },
+        createdAt: {
+            type: Date,
+            default: Date.now,
+            get: (timestamp) => dateFormat(timestamp),
+        },
     },
-    reactionBody: {
-        type: String,
-        required: true,
-        maxLength: 280,
-    },
-    username: {
-        type: String,
-        required: true,
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-        get: (timestamp) => dateFormat(timestamp),
-    },
-})
+    {
+        id: false,
+        _id: false,
+        versionKey: false,
+    }
+)
 
 const thoughtSchema = new mongoose.Schema(
     {
@@ -39,7 +46,16 @@ const thoughtSchema = new mongoose.Schema(
         },
         reactions: [reactionSchema],
     },
-    { versionKey: false }
+    {
+        toJSON: {
+            virtuals: true,
+        },
+        toObject: {
+            virtuals: true,
+        },
+        id: false,
+        versionKey: false,
+    }
 )
 
 thoughtSchema.virtual('reactionCount').get(function () {
@@ -54,7 +70,7 @@ thoughtSchema.post('save', async (doc) => {
                 user.thoughts.push(doc._id)
                 await user.save()
                 console.log(
-                    `Added thought ${doc._id} to user ${user.username}'s thoughts array`
+                    `Added thought ${doc._id} to ${user.username}'s thoughts array`
                 )
             } else {
                 console.log(
