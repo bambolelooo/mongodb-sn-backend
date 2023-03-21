@@ -4,7 +4,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -15,7 +14,7 @@
 <h3 align="center">MongoDB social network backend</h3>
 
   <p align="center">
-    project_description
+    Backend for a social network built with mongoose and node
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
@@ -60,9 +59,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-Backend for a social network built with mongoose and node
-
+![Screenshot 2023-03-20 at 10 26 26 PM](https://user-images.githubusercontent.com/63548697/226504925-8ae4e1c0-c122-48b2-b7f3-6537f7fb9c8f.png)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
