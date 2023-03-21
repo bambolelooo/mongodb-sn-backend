@@ -16,14 +16,14 @@
   <p align="center">
     Backend for a social network built with mongoose and node
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/bambolelooo/mongodb-sn-backend"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/bambolelooo/mongodb-sn-backend">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/bambolelooo/mongodb-sn-backend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/bambolelooo/mongodb-sn-backend/issues">Request Feature</a>
   </p>
 </div>
 
@@ -47,11 +47,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -154,7 +152,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@chelixchepyre](https://twitter.com/chelixchepyre)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/bambolelooo/mongodb-sn-backend](https://github.com/bambolelooo/mongodb-sn-backend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,13 +160,13 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/bambolelooo/mongodb-sn-backend.svg?style=for-the-badge
+[contributors-url]: https://github.com/bambolelooo/mongodb-sn-backend/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/bambolelooo/mongodb-sn-backend.svg?style=for-the-badge
+[forks-url]: https://github.com/bambolelooo/mongodb-sn-backend/network/members
+[stars-shield]: https://img.shields.io/github/stars/bambolelooo/mongodb-sn-backend.svg?style=for-the-badge
+[stars-url]: https://github.com/bambolelooo/mongodb-sn-backend/stargazers
+[issues-shield]: https://img.shields.io/github/issues/bambolelooo/mongodb-sn-backend.svg?style=for-the-badge
+[issues-url]: https://github.com/bambolelooo/mongodb-sn-backend/issues
+[license-shield]: https://img.shields.io/github/license/bambolelooo/mongodb-sn-backend.svg?style=for-the-badge
+[license-url]: https://github.com/bambolelooo/mongodb-sn-backend/blob/master/LICENSE.txt
