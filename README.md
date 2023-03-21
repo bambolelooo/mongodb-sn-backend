@@ -115,7 +115,8 @@
   ```sh
   npm run seed
   ```
-
+### Walkthrough video
+https://drive.google.com/file/d/1mfUwgo05wzGzOUqYl0J-ocPrLV_mC7Dx/view
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
